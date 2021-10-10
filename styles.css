@@ -1,0 +1,509 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  border-radius: 1em;
+  gap: 15%;
+}
+.navBar h1 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 2.5em;
+}
+.logoText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: fit-content;
+  margin-left: 2.5%;
+  gap: 5%;
+}
+.logoText img {
+  height: 60%;
+  width: auto;
+}
+.searchBar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 40vw;
+  position: relative;
+}
+.searchBar input {
+  width: 75%;
+  height: 45%;
+}
+.locationButton {
+  position: absolute;
+  right: 2%;
+  height: 45%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  color: white;
+  background-color: #242424;
+  border-radius: 0.5em;
+  font-size: 1em;
+  gap: 5%;
+}
+.locationButton img {
+  height: 40%;
+  width: auto;
+}
+.locationButton p {
+  height: fit-content;
+  width: fit-content;
+}
+.signUpButtons {
+  width: 33.33%;
+  height: 50%;
+  border-radius: 2em;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 1em;
+  border-style: none;
+}
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2.5%;
+  height: 100%;
+  width: 20vw;
+  gap: 10%;
+}
+.navButtons img {
+  height: 45%;
+  width: auto;
+}
+#login {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+#signup {
+  color: white;
+  background-color: #242424;
+}
+.content {
+  /* background-color: #f0e5cf; */
+  height: 100%;
+  background-color: #e8e6e1;
+  display: flex;
+  flex-direction: column;
+}
+.bottomContent {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 65%;
+  gap: 5%;
+}
+.filterDiv {
+  margin-top: 2.5vh;
+  width: 90%;
+  height: 7.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 1em;
+  gap: 2.5%;
+}
+
+.logoFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+  border-style: none;
+  background-color: black;
+  color: white;
+  width: 9%;
+  height: 50%;
+  gap: 5%;
+}
+.logoFilter img {
+  height: 70%;
+  width: auto;
+}
+.logoFilter p {
+  height: fit-content;
+  width: fit-content;
+}
+.locationFilter {
+  width: 15%;
+}
+.locationFilter img {
+  height: 50%;
+}
+.faded {
+  opacity: 0.3;
+}
+.first {
+  margin-left: 2.5%;
+}
+.scrollDiv {
+  display: flex;
+  flex-direction: column;
+  /* background-color: black; */
+  overflow-y: auto;
+  width: 90%;
+  height: 77.5%;
+  gap: 2.5%;
+}
+.scrollDiv div {
+  display: flex;
+  /* width: 100%; */
+  background-color: white;
+  border-radius: 1em;
+}
+.itemDiv {
+  height: 32.5%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+}
+.itemInfoDiv {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 70%;
+  gap: 2%;
+  background-color: black;
+}
+.itemImg {
+  height: 100%;
+  width: 20%;
+}
+.itemDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.itemLocation {
+  display: flex;
+  height: 60%;
+  width: 20%;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.locationText {
+  width: fit-content;
+  height: fit-content;
+}
+.itemLocation img {
+  width: 60%;
+  height: auto;
+}
+.jobDiv {
+  height: 15%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2%;
+}
+.favoriteLogo {
+  margin-left: 1vw;
+  height: 5vh;
+  width: auto;
+}
+.jobDiv h2 {
+  height: fit-content;
+  width: 70%;
+}
+
+.rightContent {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+.findDiv {
+  margin-top: 2.5vh;
+  width: 80%;
+  height: 90%;
+  background-color: white;
+  border-radius: 1em;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1em;
+  gap: 1px;
+}
+.findDiv h3 {
+  height: fit-content;
+  margin-left: 10%;
+  margin-bottom: 2.5%;
+  margin-top: 4%;
+}
+.categoryDiv {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+.category {
+  margin-left: 1vw;
+}
+.selected {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.subCategoryDiv {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+.subCategory {
+  margin-left: 1vw;
+}
+.footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  gap: 5%;
+}
+.copyrightDiv {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: fit-content;
+}
+.copyrightDiv img {
+  /* margin-right: 2%; */
+  height: 50%;
+  width: auto;
+}
+.footer p {
+  height: fit-content;
+  width: fit-content;
+}
+/* designed for 1920 x 1080 first and breakpoitns are for smaller breakpoints */
+@media screen and (max-width: 1536px) {
+  .navBar {
+    gap: 12.5%;
+  }
+  .searchBar {
+    width: 40vw;
+  }
+  .locationButton {
+    font-size: 1em;
+    width: 25%;
+    gap: 2%;
+  }
+  .signUpButtons {
+    width: 33.33%;
+    height: 50%;
+    border-radius: 2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1em;
+    border-style: none;
+  }
+  .navButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    height: 100%;
+    width: 20vw;
+    gap: 5%;
+  }
+  .findDiv {
+    font-size: 1em;
+  }
+  .filterDiv {
+    margin-top: 2.5vh;
+    width: 90%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+    font-size: 1em;
+    gap: 2.5%;
+  }
+
+  .logoFilter {
+    width: 10%;
+  }
+
+  .locationFilter {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .navBar {
+    gap: 10%;
+  }
+  .searchBar {
+    width: 40vw;
+  }
+  .locationButton {
+    font-size: 0.9em;
+    gap: 4%;
+  }
+  .signUpButtons {
+    width: 33.33%;
+    height: 50%;
+    border-radius: 2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1em;
+    border-style: none;
+  }
+  .navButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2%;
+    height: 100%;
+    width: 20vw;
+    gap: 10%;
+  }
+  .findDiv {
+    font-size: 1em;
+  }
+  .filterDiv {
+    margin-top: 2.5vh;
+    width: 90%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+    gap: 2.5%;
+  }
+
+  .logoFilter {
+    width: 10%;
+  }
+
+  .locationFilter {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .logoText img {
+    height: 50%;
+    width: auto;
+  }
+  .navBar h1 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 2.3em;
+  }
+  .navBar {
+    gap: 7.5%;
+  }
+  .searchBar {
+    width: 40vw;
+  }
+  .locationButton {
+    font-size: 0.8em;
+    width: 27.5%;
+    gap: 2%;
+  }
+  .signUpButtons {
+    width: 33.33%;
+    height: 50%;
+    border-radius: 2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 0.8em;
+    border-style: none;
+  }
+  .navButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    height: 100%;
+    width: 25vw;
+    gap: 5%;
+  }
+  .findDiv {
+    font-size: 1em;
+  }
+  .filterDiv {
+    margin-top: 2.5vh;
+    width: 90%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+    gap: 2.5%;
+  }
+
+  .logoFilter {
+    width: 12.5%;
+  }
+
+  .locationFilter {
+    width: 25%;
+  }
+}
